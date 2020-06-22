@@ -4,10 +4,10 @@ implementing Never Give Up agent on BubbleBobble
 
 ## please use conda environment for consistency!
 
-'''
-conda env create -f env.yml
-conda activate ngu-bb
-'''
+
+    conda env create -f env.yml
+    conda activate ngu-bb
+
 
 env.yml file contains environmental packages such as python, torch, ...
 this is used to make standard develop environmental for all users
