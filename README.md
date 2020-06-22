@@ -1,4 +1,4 @@
-### AI611 RL project
+# AI611 RL project
 
 implementing Never Give Up agent on BubbleBobble
 
