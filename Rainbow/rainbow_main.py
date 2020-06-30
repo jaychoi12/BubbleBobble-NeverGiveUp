@@ -41,6 +41,7 @@ def train(render):
     online_net.train()
     target_net.train()
     memory = Memory(replay_memory_capacity)
+    memory = torch.load('saved/model_memory.pt')
     epsilon = 0.1
     steps = 0
     beta = beta_start
@@ -99,7 +100,7 @@ def train(render):
             print('{} episode | Total Reward: {}'.format(
                 e, total_reward))
             torch.save(online_net.state_dict(), 'saved/online_net.pt')
-        
+            torch.save(memory, 'saved/model_memory.pt')
         env.close()
         
 def test(level_list, render=True):
